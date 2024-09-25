@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Estilo Geral */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #f1b321;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner img {
+    width: 700px;
+    height: auto;
+    display: block;
+}
+
+.box-btn-banner {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.btn-banner {
+    background-color: #f1b321;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn-banner:hover {
+    background-color: #e0a520;
+}
+
+/* Produtos e Serviços */
+.produto, .servico {
+    border: 1px solid #bccdd7;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produto h3, .servico h3 {
+    margin-top: 0;
+}
+
+.carrossel {
+    position: relative;
+    width: 400px;
+}
+
+.carrossel-imagens {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel-imagens img {
+    width: 100%;
+    height: auto;
+}
+
+.carrossel-prev, .carrossel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #f1b321;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.carrossel-prev {
+    left: 10px;
+}
+
+.carrossel-next {
+    right: 10px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #bccdd7;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+footer .links-nav {
+    margin-bottom: 10px;
+}
+
+footer .links-nav a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer .links-nav a:hover {
+    text-decoration: underline;
+}
+
+footer .contato p {
+    margin: 5px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}

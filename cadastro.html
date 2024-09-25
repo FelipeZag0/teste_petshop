@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Zago - Cadastro</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <div class="container">
+            <h1>PetShop Zago</h1>
+            <nav>
+                <!-- Menu de navegação -->
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                    <li><a href="entrar.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main>
+        <form id="form-cadastro" method="post">
+            <h2>Cadastre-se</h2>
+            
+            <!-- Campo para nome do usuário -->
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <!-- Campo para endereço do usuário -->
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            
+            <!-- Campo para telefone do usuário -->
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <!-- Campo para e-mail do usuário -->
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <br><br><br>
+
+            <h3>Dados do seu Pet</h3>
+            
+            <!-- Campo para nome do pet -->
+            <label for="nome-pet">Nome do Pet:</label>
+            <input type="text" id="nome-pet" name="nome-pet" required>
+
+            <!-- Seletor para tipo do pet -->
+            <label for="tipo">Tipo do pet:</label>
+            <select name="tipo" id="tipo" required>
+                <option value="" disabled selected>Selecione o tipo</option>
+                <option value="Gato">Gato</option>
+                <option value="Cachorro">Cachorro</option>
+            </select>
+
+            <!-- Campo para raça do pet -->
+            <label for="raca">Raça:</label>
+            <input type="text" id="raca" name="raca" required>
+
+            <!-- Seletor para temperamento do pet -->
+            <label for="temperamento">Temperamento:</label>
+            <select name="temperamento" id="temperamento" required>
+                <option value="" disabled selected>Selecione o temperamento</option>
+                <option value="Brincalhão">Brincalhão</option>
+                <option value="Calmo">Calmo</option>
+                <option value="Agressivo">Agressivo</option>
+            </select>
+
+            <br><br>
+            <!-- Botão para enviar o formulário -->
+            <button type="submit">Cadastrar</button>
+        </form>
+    </main>
+
+    <!-- Link para o arquivo de scripts JavaScript -->
+    <script src="js/cadastro.js"></script>
+
+    <footer>
+        <div class="links-nav">
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="produtos.html">Nossos produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+        </div>
+
+        <div class="contato">
+            <p>E-mail: petshopzago@email.com</p>
+            <p>Telefone: (00) 99999-9999</p>
+        </div>
+        <br>
+        <!-- Informações de copyright e desenvolvedor -->
+        <p>&copy; 2024 PetShop. Desenvolvido por Felipe Zago.</p>
+    </footer>
+</body>
+
+</html>

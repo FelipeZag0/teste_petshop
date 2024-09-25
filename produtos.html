@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Metadados e link para o CSS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetShop Zago - Produtos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Cabeçalho com navegação -->
+    <header>
+        <div class="container">
+            <h1>PetShop Zago</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="carrinho.html">Carrinho</a></li>
+                    <li><a href="entrar.html">Entrar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção de produtos -->
+        <h2>Nossos produtos</h2>
+
+        <!-- Produto 1 -->
+        <div class="produto" id="produto1" data-preco="27.90">
+            <h3>Ração Seca Pedigree para Cães Adultos Sabor Carne ao Leite Nutrição Essencial 900g</h3>
+            <div class="carrossel">
+                <div class="carrossel-imagens">
+                    <img src="images/racao-seca1.png" alt="Produto 1">
+                    <img src="images/racao-seca2.png" alt="Produto 1">
+                    <img src="images/racao-seca3.png" alt="Produto 1">
+                </div>
+                <button class="carrossel-prev">&lt;</button>
+                <button class="carrossel-next">&gt;</button>
+            </div>
+            <p>A Ração Seca Pedigree para Cães Adultos Sabor Carne ao Leite Nutrição Essencial (900g) oferece uma dieta
+                completa e equilibrada...</p>
+            <p>R$ 27,90</p>
+            <button data-id="produto1" data-preco="27.90">Adicionar ao Carrinho</button>
+        </div>
+
+        <!-- Produto 2 -->
+        <div class="produto" id="produto2" data-preco="12.90">
+            <h3>Ração Úmida Pedigree em Lata Sabor Patê Carne para Cães Filhotes 280g</h3>
+            <div class="carrossel">
+                <div class="carrossel-imagens">
+                    <img src="images/racao-umida1.png" alt="Produto 2">
+                    <img src="images/racao-umida2.png" alt="Produto 2">
+                </div>
+                <button class="carrossel-prev">&lt;</button>
+                <button class="carrossel-next">&gt;</button>
+            </div>
+            <p>A Ração Úmida em Lata Patê Carne para Cães Filhotes é feita com carne de alta qualidade...</p>
+            <p>R$ 12,90</p>
+            <button data-id="produto2" data-preco="12.90">Adicionar ao Carrinho</button>
+        </div>
+
+        <br><br>
+
+        <!-- Seção de serviços -->
+        <h2>Serviços Disponíveis</h2>
+        <div class="servicos">
+            <!-- Serviço de Banho -->
+            <div class="servico">
+                <h3>Banho</h3>
+                <p>Oferecemos um banho completo para seu pet, com produtos de qualidade...</p>
+                <p>R$ 98,90</p>
+                <label for="servico-banho">Serviço:</label>
+                <select id="servico-banho" name="servico-banho" required>
+                    <option value="" disabled selected>Selecione o tipo de pet</option>
+                    <option value="Pets grandes">Pets grandes</option>
+                    <option value="Pets pequenos">Pets pequenos</option>
+                </select>
+                <button id="agendar-banho">Agendar agora</button>
+            </div>
+            <!-- Serviço de Tosa -->
+            <div class="servico">
+                <h3>Tosa</h3>
+                <p>Serviço de tosa personalizado para deixar seu pet com o visual que você deseja...</p>
+                <p>R$ 107,90</p>
+                <label for="servico-tosa">Serviço:</label>
+                <select id="servico-tosa" name="servico-tosa" required>
+                    <option value="" disabled selected>Selecione o tipo de pet</option>
+                    <option value="Pets grandes">Pets grandes</option>
+                    <option value="Pets pequenos">Pets pequenos</option>
+                </select>
+                <button id="agendar-tosa">Agendar agora</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="links-nav">
+            <a href="cadastro.html">Cadastre-se</a>
+            <a href="produtos.html">Nossos produtos</a>
+            <a href="sobre.html">Sobre nós</a>
+        </div>
+
+        <div class="contato">
+            <p>E-mail: petshopzago@email.com</p>
+            <p>Telefone: (00) 99999-9999</p>
+        </div>
+        <br>
+        <!-- Informações de copyright e desenvolvedor -->
+        <p>&copy; 2024 PetShop. Desenvolvido por Felipe Zago.</p>
+    </footer>
+
+    <!-- Scripts para funcionalidades adicionais -->
+    <script src="js/carrinho.js"></script>
+    <script src="js/produtos.js"></script>
+</body>
+
+</html>
